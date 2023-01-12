@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<title>Faculty of Enviromental Studies (FES)</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Faculty of Enviromental Studies Page">
+	<meta name="keywords" content="Enviromental Studies, Enviromental, FES">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+<!-- ICON -->
+	<link href="image/icons8-university-100.png" rel="small icon"/>
+	
+<!-- GOOGLE FONT -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+	
+<!--STYLESHEET-->
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/flaticon.css"/>
+	<link rel="stylesheet" href="css/owl.carousel.min.css"/>
+	<link rel="stylesheet" href="css/animate.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/stylesheet.css"/>
+</head>
+
+<script>
+	var modal=document.getElementById('id01');
+
+	window.onclick=function(event){
+		if(event.target==modal){
+			modal.style.display="none";
+		} 
+	}
+</script>
+
+<body>
+
+<!-- LOGIN FORM -->
+	<div id="id01" class="modal">
+		<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Class Modal">&times;</span>
+			<form class="modal-content" action="">
+				<div class="imglogincontainer">
+					<i class="fa fa-user-circle-o" style="font-size:8rem; color:#D0C9C0"></i>
+				</div>
+
+				<div class="container">
+					<lable for="studentno"><b>Student number</b></label>  
+					<input type="text" placeholder="enter student number" name="studentno" required> 
+
+					<lable for="psw"><b>Password</b></label>  
+					<input type="password" placeholder="enter password" name="password" required> 
+ 
+					<button type="submit">Login</button> 
+   
+					<label>
+					<input type="checkbox" checked="checked" name="remember">Remember Me
+					</label>
+				</div>
+
+				<div class="container" style="background-color:#f1f1f1">
+				<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn"> Cancel</button>
+				<span class="psw"> <a href="#">Forgot Password?</a></span>
+
+			</div>   
+		</form> 
+	</div>
+
+<!-- HEADER SECTION -->
+	<header class="header-section">
+		<a href="./index.html" class="site-logo"><img src="image/icons8-university-100.png" alt="logo"></a>
+  
+		<div class="nav-switch">
+			<i class="fa fa-bars"></i>
+		</div>
+
+		<div class="nav-wrap">
+			<div class="login-button">
+				<a href="#" onclick="document.getElementById('id01').style.display='block'">Login</a>
+			</div>
+
+			<ul class="nav-menu">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Faculty Forum</a></li>
+				<li><a href="#">Programme</a></li>
+				<li><a href="#">Research</a></li>
+				<li><a href="#">Alumni</a></li>
+			</ul>
+		</div>
+	</header>
+	
+<!-- ABOUT SECTION -->
+	<section class="about_section set-bg" data-setbg="image/bg.jpg">
+		<div class="about-content">
+			<h3>Faculty of Enviromental Studies</h3>
+		</div>
+	</section>
+
+<!-- EVENT SECTION - CALENDAR & ANNOUNCEMENT -->
+	<section= "event-section">
+		<div class="row">
+			<!--CALENDAR-->		
+			<div class="col-lg-6">
+				<div class="e-calendar">
+					<h3>Calendar</h3>
+					
+					<div class="month">      
+						<ul>
+						<li class="prev">&#10094;</li>
+						<li class="next">&#10095;</li>
+						<li>
+							May<br>
+							<span style="font-size:18px">2022</span>
+						</li>
+						</ul>
+					</div>
+					
+					<ul class="weekdays">
+						<li>Mo</li>
+						<li>Tu</li>
+						<li>We</li>
+						<li>Th</li>
+						<li>Fr</li>
+						<li>Sa</li>
+						<li>Su</li>
+					</ul>
+					
+					<ul class="days">  
+						<li>1</li>
+						<li>2</li>
+						<li>3</li>
+						<li>4</li>
+						<li>5</li>
+						<li>6</li>
+						<li>7</li>
+						<li>8</li>
+						<li>9</li>
+						<li><span class="active">10</span></li>
+						<li>11</li>
+						<li>12</li>
+						<li>13</li>
+						<li>14</li>
+						<li>15</li>
+						<li>16</li>
+						<li>17</li>
+						<li>18</li>
+						<li>19</li>
+						<li>20</li>
+						<li>21</li>
+						<li>22</li>
+						<li>23</li>
+						<li>24</li>
+						<li>25</li>
+						<li>26</li>
+						<li>27</li>
+						<li>28</li>
+						<li>29</li>
+						<li>30</li>
+						<li>31</li>
+					</ul>
+				</div>
+			</div>
+			
+			<!--ANNOUNCEMENT-->			
+			<div class="col-lg-6">
+				<div class="e-announcement">
+					<h3>Announcement</h3>
+					<table>
+						<tr>
+							<td>CAREER FAIR 2022</td>
+						</tr>
+						<tr>
+							<td>Scholarship available</td>
+						</tr>
+						<tr>
+							<td>New registration</td>
+						</tr>
+						<tr>
+							<td>Covid-19 Precaution</td>
+						</tr>
+						<tr>
+							<td>PTPTN news</td>
+						</tr>
+						<tr>
+							<td>Announcement 6</td>
+						</tr>
+						<tr>
+							<td>Announcement 7</td>
+						</tr>
+						<tr>
+							<td>Announcement 8</td>
+						</tr>
+						<tr>
+							<td>Announcement 9</td>
+						</tr>
+						<tr>
+							<td>Announcement 10</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		
+		</div>
+	</section>
+	
+<!-- REGISTER SECTION - info & pic slideshow & button -->
+	<section class="register-section">
+		<div class="row">
+			<!--Info-->
+			<div class="col-lg-4">
+				<div class="info-career-opt">
+					<h4>Career Opportunities</h4>
+					<ul>
+						<li>Public Relations Specialist</li>
+						<li>Environmental Attorney</li>
+						<li>Environmental Engineer</li>
+						<li>Sustainability Specialist</li>
+						<li>Fundraiser</li>
+						<li>Policy Analyst</li>
+						<li>Agricultural Technologist</li>
+					</ul>
+					<a href="#">Read more ></a>
+				</div>
+			</div>
+			
+			<!--Picture slide-->
+			<div class="col-lg-4">
+				<div class="testimonial-slider owl-carousel">
+					
+					<div class="testimonial-item set-bg" data-setbg="image/1.jpg">
+					</div>
+					
+					<div class="testimonial-item set-bg" data-setbg="image/2.jpg">
+					</div>
+					
+					<div class="testimonial-item set-bg" data-setbg="image/3.jpg">
+					</div>
+					
+				</div>
+			</div>
+			
+			<!--Button-->
+			<div class="col-lg-4">
+				<div class="button-bg">
+					<div class="logo-button-bg">
+						<p><img src="image/icons8-university-100.png" alt="logo"></p>
+					</div>
+					<div class="register-button">
+						<a href="#">Register Now</a>
+					</div>
+				</div>
+			</div>
+		
+		</div>
+	
+	</section>
+	
+<!-- SCHEDULE SECTION -->
+	<section class="schedule-section">
+		<h3>Schedule Overview 2021/2022</h3>
+		
+		<div class="schedule-table">
+		   
+			<div class="schedule-button"><button type="button" onclick="loadDoc()">See schedule</button></div><br>
+			<table id="table"></table>
+
+			<script>
+				function loadDoc(){
+					var xmlhttp = new XMLHttpRequest();
+
+					xmlhttp.onreadystatechange = function(){
+
+						if(this.readyState == 4 && this.status == 200){
+							var myObj = JSON.parse(this.responseText);
+							var table = "<tr><th>WEEK</th><th>ACTIVITY</th><th>NOTE</th></tr>";
+ 
+							for (i in myObj.SCHEDULE){
+								table += "<tr><td>" + myObj.SCHEDULE[i].WEEK +
+								"</td><td>" + myObj.SCHEDULE[i].ACTIVITY +
+								"</td><td>" + myObj.SCHEDULE[i].NOTE +
+								"</td></tr>"
+							;}
+
+							document.getElementById("table").innerHTML = table;
+						}
+					};
+					xmlhttp.open("GET", "schedule.json", true);
+					xmlhttp.send();
+				}
+			</script>
+
+			<div class="download-button">
+			<input type="button" value="Download Schedule" id="downloadtable" onclick="createPDF()">
+
+			<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.22/pdfmake.min.js"></script>
+			<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+    
+			<script type="text/javascript">
+				function createPDF() {
+					html2canvas(document.getElementById('table'), {
+						onrendered: function (canvas) {
+							var data = canvas.toDataURL();
+							var docDefinition = {
+								content: [{
+								image: data,
+								width: 500 
+								}]
+							};
+							pdfMake.createPdf(docDefinition).download("FES Schedule Overview 2021/2022.pdf");
+						}
+					});
+				}
+			</script>
+			</div>
+
+		</div>
+	</section>
+	
+<!-- FOOTER SECTION -->
+	<section class="footer-section">
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="footer-left">
+					<p><img src="./image/icons8-university-100.png" alt="logo"></p>
+					<p>B 12, Jln Ss3/33 Ss3<br>Petaling Jaya 47300<br>Malaysia 47300 Malaysia</p>
+					<p>Email: art_and_design@uni.com.my</p>
+					<p>Tel No: 1-300-80-5454</p>
+					<div class="social">
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+						<a href="#"><i class="fa fa-instagram"></i></a>
+					</div>
+				</div>
+			</div>
+		
+			<div class="col-lg-6">
+				<div class="footer-right">
+					<h3>More Information</h3>
+					<div class="row">
+
+						<div class="col-sm-6">
+							<ul>
+								<li><a href="#">Staff directory</a></li>
+								<li><a href="#">Our location</a></li>
+								<li><a href="#">School year calendar</a></li>
+								<li><a href="#">Support & donation</a></li>
+								<li><a href="#">Arrange a visit</a></li>
+								<li><a href="#">Vacancies</a></li>
+							</ul>
+						</div>
+						
+						<div class="col-sm-6">
+							<ul>
+								<li><a href="#">FAQ</a></li>
+								<li><a href="#">Chat with Us</a></li>
+								<li><a href="#">Privacy policy</a></li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+<!--JAVASCRIPT & JQUERY-->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

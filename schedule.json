@@ -1,0 +1,15 @@
+
+{"SCHEDULE":[
+
+	{"WEEK" : "1", "ACTIVITY" : "Topic 1", "NOTE" : "Introduction"},
+	{"WEEK" : "2", "ACTIVITY" : "Topic 2", "NOTE" : "-"},
+	{"WEEK" : "3", "ACTIVITY" : "Topic 2 & 3", "NOTE" : "-"},
+	{"WEEK" : "4", "ACTIVITY" : "Topic 4", "NOTE" : "Assigment 1"},
+	{"WEEK" : "5", "ACTIVITY" : "SEM BREAK", "NOTE" : "-"},
+	{"WEEK" : "6", "ACTIVITY" : "Topic 5", "NOTE" : "-"},
+	{"WEEK" : "7", "ACTIVITY" : "Topic 6 & 7", "NOTE" : "-"},
+	{"WEEK" : "8", "ACTIVITY" : "Topic 7", "NOTE" : "Assigment 2"},
+	{"WEEK" : "9", "ACTIVITY" : "STUDY WEEK", "NOTE" : "-"},
+	{"WEEK" : "10", "ACTIVITY" : "FINAL TERM", "NOTE" : "Goodluck!"}
+
+]}

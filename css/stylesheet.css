@@ -1,0 +1,702 @@
+html,body{
+	height: 100%;
+	font-family: 'Mondserrat', sans-serif;
+	font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
+}
+
+/*-------------------------------
+ LOGIN FORM - HIDDEN
+-------------------------------*/
+.modal{
+	display:none;
+	position:fixed;
+	z-index:3000;
+	left:0;
+	top:0;
+	width:60%;
+	height:100%;
+	overflow:auto;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,0.4);
+	padding-top:60px;
+}
+
+.close{
+	position:absolute;
+	right:25px;
+	top:0;
+	color:#0000;
+	font-size:35px;
+	font-weight:bold;
+}
+
+.close:hover
+.close:focus{
+	color:red;
+	cursor:pointer;
+}
+
+.modal-content{
+	background-color:#fefefe;
+	margin:5px auto;
+	border: 1px solid #888;
+	width:60%;
+}
+
+.imglogincontainer{
+	text-align:center;
+	margin:24px 0 12px 0;
+}
+
+.container{
+	padding:16px;
+}
+
+form{
+	border:3px solid #f1f1f1;
+}
+
+input[type=text], input[type=password]{
+	width:100%;
+	padding:12px 20px;
+	margin:8px 0;
+	display: inline-block;
+	border: 1x solid #ccc;
+	box-sizing:border-box;
+}
+
+button{
+	background-color:#D0C9C0;
+	color:#EFEAD8;
+	padding:14px;
+	margin:8px 0;
+	border:none;
+	cursor:pointer;
+	width:100%;
+}
+
+.cancelbtn{
+	width:auto;
+	padding:10px 18px;
+	background-color:#D0C9C0;
+}
+
+span.psw{
+	float:right;
+	padding-top: 16px;
+}
+
+/*-----------------------
+      HEADER
+---------------------------*/
+.header-section{
+	background-color:#D0C9C0;
+	position: absolute;
+	width: 100%;
+	padding-top:20px;
+	z-index:1000;
+}
+
+.nav-menu{
+	display:flex;
+}
+
+.nav-menu a{
+	color:#5F7161;
+	font-size:15px;
+	margin-left:20px;
+	text-decoration:none;
+}
+
+.nav-menu a:hover{
+	font-size:17px;
+}
+
+.nav-menu li{
+	list-style:none;
+}
+
+.site-logo{
+	display: inline-block;
+	margin-left:25px;
+}
+
+.nav-wrap{
+	float: right;
+}
+
+.login-button{
+	float: right;
+	background: #5F7161;
+	margin-left: 20px;
+	margin-right: 70px;
+	margin-top: 15px;
+	font-size: 15px;
+	font-weight:400;
+	padding: 12px 19px;
+	line-height:1;
+	border-radius:14px;
+}
+
+.login-button a{
+	color: #D0C9C0;
+	text-decoration:none;
+}
+
+.login-button a:hover{
+	font-size: 17px;
+}
+
+.nav-switch{
+	display:none;
+}
+
+/*-----------------------
+      ABOUT SECTION
+---------------------------*/
+.about_section{
+	background-color:#5F7161;
+	width: 100%;
+	height:635px;
+	overflow:hidden;
+}
+
+.set-bg{
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:top center;
+}
+
+.about-content{
+	display:flex;
+	display:-ms-flex;
+	display:-ms-flexbox;
+	display:-webkit-box;
+	align-items:center;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	-webkit-box-pack:center;
+	-ms-flex-pack:center;
+	justify-content:center;
+	height:100%;
+	position: relative;
+}
+
+.about-content h3{
+	text-align:center;
+	color:#EFEAD8;
+	font-size:4.50rem;
+	font-weight:300;
+	line-height:1;
+	margin-top:90px;
+}
+
+/*-----------------------
+EVENT SECTION - CALENDAR & ANNOUNCEMENT
+---------------------------*/
+.event-section{
+	display:inline;
+	width:100%;
+}
+
+.e-calendar{
+	margin-top:25px;
+	margin-left:25px;
+	background-color:#EFEAD8;
+}
+
+.e-announcement{
+	margin-top:25px;
+	margin-right:25px;
+	background-color:#6D8B74;
+}
+
+/*CALENDAR*/
+
+.e-calendar{
+	padding:50px;
+	box-sizing: border-box;
+}
+
+.e-calendar h3{
+	color:#6D8B74;
+	text-align:center;
+}
+
+.e-calendar ul{
+	list-style-type: none;
+}
+
+.e-calendar .month {
+	padding: 70px 25px;
+	width: 100%;
+	background: #6D8B74;
+	text-align: center;
+}
+
+.e-calendar .month ul {
+	margin: 0;
+	padding: 0;
+}
+
+.e-calendar .month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.e-calendar .month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+.e-calendar .month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+.e-calendar .weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #ddd;
+}
+
+.e-calendar .weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+.e-calendar .days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+}
+
+.e-calendar .days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: #777;
+}
+
+.e-calendar .days li .active {
+  padding: 5px;
+  background: #6D8B74;
+  color: white !important
+}
+
+/*ANNOUNCEMENT*/
+.e-announcement{
+	padding:50px;
+}
+
+.e-announcement h3{
+	color:#EFEAD8;
+	text-align:center;
+}
+
+.e-announcement table{
+	width:100%;
+	border-collapse: collapse;
+}
+
+.e-announcement table td{
+  border-bottom: 1px solid #dddddd;
+  text-align: center;
+  padding: 10px;
+  color:#eee;
+}
+
+/*-----------------------
+REGISTER SECTION - info & pic slideshow & button
+---------------------------*/
+.register-section{
+	display:inline;
+	width:100%;
+}
+
+/*info*/
+.register-section .info-career-opt{
+	margin-left:25px;
+	margin-top:25px;
+	padding: 25px;
+	background-color:#EFEAD8;
+}
+
+.register-section .info-career-opt h4{
+	color:#5F7161;
+	text-align:center;
+}
+
+.register-section .info-career-opt ul, li{
+	list-style:none;
+	color:#6D8B74;
+	text-align:center;
+}
+
+.register-section .info-career-opt a{
+	float:right;
+	font-size:15px;
+	text-decoration:none;
+	color:#5F7161;
+}
+
+.register-section .info-career-opt a:hover{
+	font-size:17px;
+}
+
+/*pic slideshow*/
+.register-section .testimonial-slider{
+	margin-top:25px;
+	padding: 10px;
+	background-color:#5F7161;	
+}
+
+.testimonial-item{
+	width:400px;
+	height:250px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.testimonial-slider .owl-dots{
+	display:flex;
+	display:-webkit-box;
+	display:-ms-flex;
+	display:-ms-flexbox;
+	position:absolute;
+	bottom:5px;
+}
+
+.testimonial-slider .owl-dots .owl-dot{
+	display:inline-flex;
+	display:-webkit-inline-box;
+	display:-ms-inline-flex;
+	display:-ms-inline-flexbox;
+	width:6px;
+	height:6px;
+	border-radius:50%;
+	margin-right:7px;
+	background:#eee;
+}
+
+.testimonial-slider .owl-dots .owl-dot.active{
+	background:black;
+	opacity:20%;
+}
+
+/*button*/
+.register-section .button-bg{
+	margin-right:25px;
+	margin-top:25px;
+	padding: 25px;
+	background-color:#EFEAD8;
+}
+
+.register-button{
+	background: #5F7161;
+	margin-left: 70px;
+	margin-right: 70px;
+	margin-top: 15px;
+	font-size: 15px;
+	font-weight:400;
+	text-align:center;
+	padding: 12px 19px;
+	line-height:1;
+	border-radius:14px;
+}
+
+.button-bg p{
+	text-align:center;
+}
+
+.register-button a{
+	color: #D0C9C0;
+	text-decoration:none;
+}
+
+.register-button a:hover{
+	font-size: 17px;
+}
+
+.button-bg img{
+	margin:30px;
+}
+
+/*-----------------------
+      SCHEDULE SECTION
+---------------------------*/
+.schedule-section{
+	margin-right:25px;
+	margin-left:25px;
+	margin-top:25px;
+	padding: 25px;
+	background-color:#6D8B74;
+}
+
+.schedule-section h3{
+	color:#EFEAD8;
+	text-align:center;
+}
+
+.schedule-table table{
+	width: 100%;
+}
+
+.schedule-table table, th, td {
+	border-collapse: collapse;
+}
+
+.schedule-table th,td{
+	padding: 5px;
+	text-align: center;
+	font-size:15px;
+	border-bottom:0.9px solid #D0C9C0;
+}
+
+.schedule-table th{
+	color:#fff;
+	background-color:#D0C9C0;
+}
+
+.schedule-table tr{
+	background: #EFEAD8;
+}
+
+.schedule-table .schedule-button{
+	background: #D0C9C0;
+	margin-left: 70px;
+	margin-right: 70px;
+	margin-top: 15px;
+	font-size: 15px;
+	font-weight:400;
+	text-align:center;
+	line-height:1;
+	border-radius:14px;	
+}
+
+.schedule-table .download-button{
+	margin-top:5px;
+	font-size:15px;
+}
+
+/*-----------------------
+      FOOTER SECTION
+---------------------------*/
+
+.footer-section{
+	background-color:#D0C9C0;
+	width: 100%;
+	padding-top:25px;
+}
+
+.footer-left{
+	margin-left:50px;
+	padding:20px;
+}
+
+.footer-left p{
+	color:#5F7161;
+	font-size:15px;
+	text-align:right;
+}
+
+.footer-left img{
+	margin-bottom:25px;
+}
+
+.social{
+	margin-top:25px;
+	margin-left:420px;
+	display:flex;
+	display:-ms-flex;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:-webkit-box;
+}
+
+.social a{
+	display:inline-flex;
+	display:-ms-inline-flex;
+	display:-webkit-inline-flex;
+	display:-ms-inline-flexbox;
+	display:-webkit-inline-box;
+	width:35px;
+	height:35px;
+	border-radius:50%;
+	color:#000;
+	background:#EFEAD8;
+	font-size:12px;
+	margin-right:14px;
+	justify-content:center;
+	align-items:center;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	-webkit-box-pack:center;
+	-ms-flex-pack:center;
+	transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+	-o-transition: all 0.4s;
+}
+
+.social a:hover{
+	background:#D0C9C0;
+}
+
+.footer-right{
+	margin-right:50px;
+	padding:20px;
+}
+
+.footer-right h3{
+	color:#5F7161;
+	text-align:left;
+	margin-bottom:25px;
+}
+
+.footer-right li{
+	text-align:left;
+	
+}
+
+.footer-right a{
+	color:#5F7161;
+	font-size:15px;
+	text-decoration:none;
+}
+
+.footer-right a:hover{
+	font-size:17px;
+}
+
+
+
+
+/*-----------------------
+      RESPONSIVE
+---------------------------*/
+@media (min-width: 1200px){
+	.container{
+		max-width:1175px;
+	}
+}
+
+/*Tablet: 768px*/
+@media only screen and (min-width: 768px) and (max-width: 991px){
+	.site-logo{
+		margin-left:20px;
+	}
+	
+	.login-button{
+		margin-left:30px;
+		margin-right:20px;
+	}
+}
+
+/*Large Mobile: 767px*/
+@media only screen and (max-width: 767px){
+	.header-section{
+		padding-top:20px;
+	}
+	
+	.nav-wrap{
+		display: none;
+		position: absolute;
+		background: #fff;
+		width:100%;
+		left:0;
+		top:100%;
+		box-shadow:0 10px 50px rgba(93,93,93,0.15);
+		-webkit-box-shadow:0 10px 50px rgba(93,93,93,0.15);
+}
+
+	.login-button{
+		float: none;
+		display:inline-block;
+		position: absolute;
+		top:0;
+		right:0;
+		margin-right:15px;
+	}
+	
+	.nav-menu{
+		float:none;
+		padding-top:70px;
+	}
+
+	.nav-menu li{
+		display:block;
+	}
+
+	.nav-menu li a{
+		display:block;
+		color:#111;
+		margin-left:0;
+		border-top:1px solid #efefef;
+		padding:13px 35px;
+	}
+	
+	.modal{
+		width:80%;
+		padding-top:30px;
+	}
+	
+	.nav-switch{
+		display:block;
+		right:30px;
+		float:right;
+		font-size:30px;
+		color:#fff;
+		cursor:pointer;
+		margin-right:40px;
+	}
+	
+	.e-calendar .weekdays li, .days li {
+		width: 13.1%;
+	}
+	
+	.footer-left p{
+	text-align:center;
+	}
+
+	.social{
+		margin-left:215px;
+	}
+	
+	.footer-right h3{
+		text-align:center;
+	}
+
+	.footer-right li{
+		text-align:center;
+	
+	}
+}
+
+/*Medium Mobile: 480px*/
+@media only screen and (min-width: 576px) and (max-width: 766px){
+	.e-calendar .weekdays li, .days li {
+		width: 12.5%;
+	}
+	
+	.e-calendar .days li .active {
+		padding: 2px;
+	}
+
+}
+
+/*Small Mobile: 320px*/
+@media only screen and (max-width: 479px){
+	.site-logo{
+		margin-left:15px;
+	}
+
+}
